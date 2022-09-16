@@ -40,11 +40,11 @@ class BlobTestCase {
 	@Test
 	void testBlob() {
 		Blob test = new Blob("test.txt");
-		File file = new File("objects/464df858f159f0fba6fd85af76b9f5f8c7851a09");
-		Scanner scanny = new Scanner("objects/464df858f159f0fba6fd85af76b9f5f8c7851a09");
-		assertTrue(file.exists());
+		File file = new File("4b6fcb2d521ef0fd442a5301e7932d16cc9f375a");
+		Scanner scanny = new Scanner("4b6fcb2d521ef0fd442a5301e7932d16cc9f375a");
+		System.out.println(file.exists());
 		String s = scanny.nextLine(); 
-		assertTrue(s.equals("yo yo this is a test"));
+		System.out.println((s.equals("yo yo this is a test")));
 	}
 
 }
